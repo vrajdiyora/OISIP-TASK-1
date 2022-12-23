@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: normal;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.logo span {
+    color: #d63031;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.menu a:first-child {
+    color: #d63031;
+}
+
+.sofa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sofa img {
+    width: 100%;
+}
+
+.element {
+    position: absolute;
+    font-size: 2em;
+    text-align: center;
+    bottom: 15%;
+    left: 30%;
+}
+
+canvas {
+    position: absolute;
+    z-index: 99;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 90%;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+    width: 60px;
+
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+
+
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background-color: #6f8cc7d3;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background-color: lightgreen;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background-color: #e06f95;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background-color: #1DA1F2;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+
+}
